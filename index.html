@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag-Drop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <!-- This part of HTML code has one container and two boxes inside this container to which drag and drop operations
+  are to be performed -->
+
+  <div class="container">
+    <div class="whiteBox" id="whiteBox1">
+      <img class="imgBox" id="imgID" src="Krishna.jpg" alt="Krishna Image" height="100px" width="100px" draggable="true">
+      <img src="Little_Krishna.gif" class="gif" id="gifID" height="100px" width="100px" alt="Little_Krishna_Gif" draggable="true">
+      <h1 class="text" id="textID" draggable="true">Hare Krishna</h1>
+    </div>
+    <div class="whiteBox" id="whiteBox2"></div>
+  </div>
+
+
+  <div class="btn">
+    <button class="resetBtn">Reset</button>
+    <!-- <input class="resetBtn" type="reset" value="Reset"> -->
+  </div>
+
+
+</body>
+
+
+<script src="index.js"></script>
+
+
+</html>
