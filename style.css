@@ -2,6 +2,8 @@ body {
   background-color: aquamarine;
 }
 
+/* CSS on image element */
+
 .imgBox{
   display: inline-block;
   position: relative;
@@ -10,6 +12,8 @@ body {
   margin-left: 10px;
 }
 
+/* CSS on gif element */
+
 .gif{
   display: inline-block;
   position: relative;
@@ -17,6 +21,8 @@ body {
   margin-top: 10px;
   margin-left: 10px;
 }
+
+/* CSS on text element */
 
 .text{
   display: inline-block;
@@ -33,6 +39,8 @@ body {
   margin-top: 100px;
 }
 
+/* CSS on first whitebox element */
+
 #whiteBox1{
   position: fixed;
   display: inline-block;
@@ -41,6 +49,8 @@ body {
   background-color: white;
   border: 3px black solid;
 }
+
+/* CSS on second whitebox element */
 
 #whiteBox2 {
   position: fixed;
@@ -52,11 +62,15 @@ body {
   border: 3px black solid;
 }
 
+/* CSS on block of reset button element */
+
 .btn{
   width: 100%;
   height: 40px;
   margin-top: 100px;
 }
+
+/* CSS on reset button element */
 
 .resetBtn {
   position: relative;
@@ -70,9 +84,14 @@ body {
   background-color: rgb(93, 93, 206);
 }
 
+/* This is the class applied on element which are being dragged.
+This is appied only for the time elemet is being dragged */
+
 .hold {
   border: 3px red solid;
 }
+
+/* This is to hide the element once dragged */
 
 .hide {
   display: none;
