@@ -17,6 +17,18 @@ const elements = [imgBox, gif, text];                // Array containing all the
 
 // This for loop iterate all the initial elements (i.e. image, text and gif) of 1st block
 
+const message = document.querySelector('.message');
+message.className = 'hide';
+
+function openPopUp() {
+  let url = "https://www.tutorialspoint.com/index.htm";
+  let height = 300;
+  let width = 700;
+  var left = ( screen.width - width ) / 2;
+  var top = ( screen.height - height ) / 2;
+  var newWindow = window.open( url, "center window", 'resizable = yes, width=' + width + ', height=' + height + ', top='+ top + ', left=' + left);
+}
+
 for(element of elements) {                         
   element.addEventListener('dragstart', (e) => {     // detecting event on element of whiteBox
     e.target.className += ' hold';                     // The class of dragging element is changed into hold to make some changes
@@ -39,6 +51,12 @@ for(element of elements) {
     } else if(e.target.id == 'gifID'){
       e.target.className = 'gif';
     } 
+
+    message.className = 'message';
+    setTimeout(()=>{
+      message.className = 'hide';
+    }, 1200);
+
     objID = null;                                     // After drop objID variable is reset
   });
 }
@@ -74,4 +92,5 @@ resetBtn.addEventListener('click', ()=>{
   document.getElementById('whiteBox1').append(imgBox);
   document.getElementById('whiteBox1').append(gif);
   document.getElementById('whiteBox1').append(text);
+  message.className = 'hide';
 });

@@ -96,3 +96,13 @@ This is appied only for the time elemet is being dragged */
 .hide {
   display: none;
 }
+
+.message {
+  position: fixed;
+
+  height: 75;
+  width: 75;
+  margin-top: -300px;
+  margin-left: 600px;
+  padding: 10px;
+}
